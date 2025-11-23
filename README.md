@@ -24,17 +24,28 @@ The script outputs:
 - Gantt chart of Adaptive RR execution
 - Bar chart comparing average response time across SJF, Fixed RR, Adaptive RR
 
+## Project Structure
+```
+├── src/
+│   └── os_simulation.py        # Main simulation script (Adaptive + Fixed + SJF)
+├── figures/
+│   └── response_time_comparison.png  # Saved plot example
+├── requirements.txt
+├── README.md
+└── (docs, PDFs)
+```
+
 ## Running
-Create / activate a virtual environment (optional) and install dependencies:
+Create / activate a virtual environment (optional) and install dependencies, then run the simulation module:
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # macOS/Linux
 pip install -r requirements.txt
-python os_simulation.py
+python src/os_simulation.py
 ```
 
 ## Configuration
-Inside `os_simulation.py` modify:
+Inside `src/os_simulation.py` modify:
 - `num_processes`
 - `cpu_bound_ratio`
 - `seed`
