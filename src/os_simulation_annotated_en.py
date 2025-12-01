@@ -18,7 +18,7 @@ then dynamically adjusts the time quantum:
   - Long tasks → moderate quantum → reduce unnecessary context switches
 
 【FILE STRUCTURE】
-  1. Data Structures (Process, ProcessMetrics)
+  1. Data Structures (Process)
   2. Workload Generator (generate_workload)
   3. Three Scheduler Implementations (simulate_sjf, simulate_fixed_rr, simulate_adaptive_rr)
   4. Visualization & Main Function (plot_results, main)
